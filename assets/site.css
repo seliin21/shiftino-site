@@ -61,11 +61,15 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--amber); outline
   font-size: clamp(56px, 9vw, 112px);
 }
 .hero p.lead { font-size: clamp(18px, 2.1vw, 22px); line-height: 1.5; max-width: 30ch; margin: 28px 0 32px; color: #dfe4ee; }
-.hero .soon { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; font-weight: 700; }
-.pill { display: inline-block; padding: 10px 18px; border-radius: 999px; background: var(--amber); color: var(--navy); }
-.hero .soon a { color: #dfe4ee; }
-.hero .soon a.web-link { color: var(--white); text-decoration: none; border-bottom: 2px solid var(--amber); padding-bottom: 2px; }
-.hero .soon a.web-link:hover { color: var(--amber); }
+.hero .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; font-weight: 700; }
+.hero .cta a.store {
+  display: inline-block; padding: 14px 24px; border-radius: 999px;
+  background: var(--amber); color: var(--navy); text-decoration: none; font-size: 18px; font-weight: 800;
+}
+.hero .cta a.store:hover { background: #ffb83d; }
+.hero .cta a.web-link { color: var(--white); text-decoration: none; border-bottom: 2px solid var(--amber); padding-bottom: 2px; }
+.hero .cta a.web-link:hover { color: var(--amber); }
+.hero .note { margin: 18px 0 0; font-size: 15px; color: #b9c1d1; max-width: 40ch; }
 
 /* The checklist as it looks in the app: the photo stamp is the one loud element. */
 .form {
